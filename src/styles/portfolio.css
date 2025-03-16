@@ -1,0 +1,52 @@
+#folio {
+    text-align: center;
+    margin-top: 10px;
+}
+#threeD {
+    margin-left: 50px;
+}
+#foliotabs {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.modeltab, .illustab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff00;
+    font-size: 18px;
+    width: 100px;
+    border: none;
+    padding-bottom: 5px;
+}
+.modeltab:hover, .illustab:hover {
+    letter-spacing: 1px;
+    transition: .3s;
+}
+.active-tab {
+    border-bottom: 1px solid #fff;
+}
+#threeD, #illustrations {
+    margin-top: 20px;
+}
+#modelObjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 20px;
+}
+.canvas {
+    width: 350px !important;
+    height: 450px !important;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.canvas:hover {
+    margin-top: -10px;
+}

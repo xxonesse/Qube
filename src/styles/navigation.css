@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(5px);
+    background-color: #000;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", serif;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    background-color: #ffffff1d;
+    border-radius: 10px;
+}
+.nav-btn.active {
+    border: 1px solid #ffffffd8;
+}
+
+.nav-btn:hover {
+    letter-spacing: 1px;
+    transition: .3s;
+    background-color: #ff6f0084;
+}
+.nav-btn:active {
+    letter-spacing: normal;
+}
+
+#qlogo {
+    height: 30px;
+    margin-left: auto;
+}

@@ -1,0 +1,116 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 15px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    padding: 30px;
+    border: 1px solid #ffffff5a;
+    border-radius: 20px;
+}
+.myName {
+    display: flex;
+    flex-direction: row;
+    line-height: 45px;
+    justify-content: space-between;
+}
+#wlogo {
+    height: 30px;
+}
+#profpic {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.first {
+    margin-top: 5px;
+}
+.second {
+    font-size: 24px;
+}
+#location {
+    margin-top: 40px;
+}
+#socials {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.scl-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #ffffff30;
+}
+.scl-btn:hover {
+    margin-top: -5px;
+    background-color: #ff6f0084;
+    transition: .3s;
+}
+#email {
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #fff;
+}
+#email:hover {
+    color: #fff;
+    background-color: #ff6f00d7;
+    letter-spacing: 1px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* description styling */
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: end;
+}
+#wanda {
+    font-weight: 600;
+    color: #ff6f00b9;
+}
+#meet {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 8px 18px;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #ffffff25;
+}
+.staricon, .downloadicon {
+    height: 20px;
+}
+.description {
+    font-size: 65px;
+}
+#download {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #ffffff90;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
