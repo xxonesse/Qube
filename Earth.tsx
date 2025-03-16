@@ -13,11 +13,11 @@ interface GLTFResult {
 }
 
 interface ModelProps {
-  [key: string]: any; // Allow passing other props dynamically
+  [key: string]: any;
 }
 
 export default function Model(props: ModelProps) {
-  // ✅ Ensure the correct path for GitHub Pages
+  // ✅ Corrected path using `import.meta.env.BASE_URL`
   const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}earth.gltf`) as unknown as GLTFResult;
 
   return (
@@ -27,5 +27,5 @@ export default function Model(props: ModelProps) {
   );
 }
 
-// ✅ Preload the model using the correct base URL
+// ✅ Preload model correctly for GitHub Pages
 useGLTF.preload(`${import.meta.env.BASE_URL}earth.gltf`);
