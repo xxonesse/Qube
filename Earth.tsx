@@ -1,5 +1,5 @@
-import { useGLTF } from '@react-three/drei'
-import { MeshStandardMaterial, BufferGeometry } from 'three'
+import { useGLTF } from "@react-three/drei";
+import { MeshStandardMaterial, BufferGeometry } from "three";
 
 interface GLTFResult {
   nodes: {
@@ -8,7 +8,7 @@ interface GLTFResult {
     };
   };
   materials: {
-    ['Scene_-_Root']: MeshStandardMaterial;
+    ["Scene_-_Root"]: MeshStandardMaterial;
   };
 }
 
@@ -17,13 +17,15 @@ interface ModelProps {
 }
 
 export default function Model(props: ModelProps) {
-  const { nodes, materials } = useGLTF('//Qube/earth.gltf') as unknown as GLTFResult;
-  
+  // ✅ Ensure the correct path for GitHub Pages
+  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}earth.gltf`) as unknown as GLTFResult;
+
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={1.128} />
+      <mesh geometry={nodes.Object_4.geometry} material={materials["Scene_-_Root"]} scale={1.128} />
     </group>
   );
 }
 
-useGLTF.preload('/Qube/earth.gltf');
+// ✅ Preload the model using the correct base URL
+useGLTF.preload(`${import.meta.env.BASE_URL}earth.gltf`);
