@@ -12,7 +12,7 @@
     justify-content: center;
     margin-top: 20px;
 }
-.modeltab, .illustab {
+.modeltab, .illustab, .comsnstab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,14 +22,14 @@
     border: none;
     padding-bottom: 5px;
 }
-.modeltab:hover, .illustab:hover {
+.modeltab:hover, .illustab:hover, .comsnstab:hover {
     letter-spacing: 1px;
     transition: .3s;
 }
 .active-tab {
     border-bottom: 1px solid #fff;
 }
-#threeD, #illustrations {
+#threeD, #illus-title {
     margin-top: 20px;
 }
 #modelObjects {
@@ -41,12 +41,43 @@
     margin-left: 20px;
 }
 .canvas {
-    width: 350px !important;
-    height: 450px !important;
+    max-width: 300px !important;
+    min-width: 300px !important;
+    height: 350px !important;
     object-fit: cover;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #ff6a0019;
+    border: 1px solid #ff6a00;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 15px rgba(255, 0, 212, 0.197);
 }
 .canvas:hover {
     margin-top: -10px;
+}
+#mooji {
+    margin-bottom: 10px;
+    text-align: center;
+}
+#illustrations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    justify-content: center;
+
+}
+#illus {
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.illus {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(255, 106, 0, 0.352);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 106, 0, 0.245);
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import '../src/App.css'
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -9,16 +9,14 @@ import Connect from "./pages/Connect"
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/connect" element={<Connect />} />
+          <Route path="about" element={<About />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="connect" element={<Connect />} />
         </Routes>
-      </BrowserRouter>
     </div>
   );
 };
