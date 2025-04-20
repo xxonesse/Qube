@@ -5,6 +5,7 @@ import qlogo from "../assets/img/quboidlogo.png"
 export default function Navigation() {
     return (
         <nav id="navbar">
+        <img id="qlogo" src={qlogo} alt="quboid-logo" />
         <div className="tabs">
           <NavLink to="/" className={({isActive}) => isActive ? "nav-btn active home" : "nav-btn home"}>Home</NavLink>
           <NavLink className="nav-btn portfolio" to="/portfolio">Portfolio</NavLink>
@@ -12,7 +13,6 @@ export default function Navigation() {
           <NavLink className="nav-btn resume" to="/resume">Resume</NavLink>
           <NavLink className="nav-btn connect" to="/connect">Connect</NavLink>
         </div>
-        <img id="qlogo" src={qlogo} alt="quboid-logo" />
       </nav>
     )
 }
