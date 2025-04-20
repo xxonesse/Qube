@@ -31,6 +31,7 @@
 }
 #threeD, #illus-title {
     margin-top: 20px;
+    text-align: center;
 }
 #modelObjects {
     display: flex;
@@ -41,22 +42,22 @@
     margin-left: 20px;
 }
 .canvas {
-    max-width: 300px !important;
+    max-width: 400px !important;
     min-width: 300px !important;
     height: 350px !important;
     object-fit: cover;
     border-radius: 20px;
-    background-color: #ff6a0019;
-    border: 1px solid #ff6a00;
-    backdrop-filter: blur(1px);
-    box-shadow: 0 0 15px rgba(255, 0, 212, 0.197);
+    background-color: #d4470000;
+    /* backdrop-filter: blur(1px);
+    box-shadow: 0 0 15px rgba(255, 0, 212, 0.197); */
 }
 .canvas:hover {
     margin-top: -10px;
 }
 #mooji {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
+    margin-left: 40px;
 }
 #illustrations {
     display: flex;

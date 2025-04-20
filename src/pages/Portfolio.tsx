@@ -1,25 +1,16 @@
+
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+// import Model from "../components/Model";
 import '../styles/portfolio.css';
-import { Suspense, useState } from "react";
-
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { useState } from "react";
 
 import illus1 from '../assets/img/illustrations/illus1.jpg';
 import illus2 from '../assets/img/illustrations/illus2.jpg';
 import illus3 from '../assets/img/illustrations/illus3.jpg';
 import illus4 from '../assets/img/illustrations/illus4.jpg';
 
-const Qube = ({ position = [0, 0, 0], rotation = [0, 0, 0] }) => {
-    const { scene } = useGLTF("/Qube/models/qube/Qube.gltf"); // Load 3D model
-    return <primitive object={scene} scale={1} position={position} rotation={rotation} />;
-  };
-  const Blazer = ({ position = [0, 0, 0], rotation = [0, 0, 0] }) => {
-    const { scene } = useGLTF("/Qube/models/blazer/blazer.gltf"); // Load 3D model
-    return <primitive object={scene} scale={6} position={position} rotation={rotation} />;
-  };
-  
+ 
 export default function Portfolio() {
     const [activeSection, setActiveSection] = useState<"works" | "illustrations" | "commissions">("works");    
 
@@ -49,33 +40,11 @@ export default function Portfolio() {
                     {/* 3D MODELS */}
                     <h2 id="threeD">ᯓ Character Design</h2>
                     <h2 id="mooji">MOOJI Series</h2>
-                    <div id="modelObjects">
-                        <Canvas className="canvas">
-                            <Suspense fallback={null}>
-                                <OrbitControls />
-                                <ambientLight />
-                                <Qube position={[0, 0, 0]} rotation={[0, Math.PI / 1, 0]} />
-                           </Suspense>
-                        </Canvas>
-                        <Canvas className="canvas">
-                            <Suspense fallback={null}>
-                                <OrbitControls />
-                                <ambientLight />
-                                <Blazer rotation={[0, Math.PI / 1, 0]}/>
-                            </Suspense>
-                        </Canvas>
-                        <Canvas className="canvas">
-                            <Suspense fallback={null}>
-                                <OrbitControls />
-                                <ambientLight />
-                            </Suspense>
-                        </Canvas>
-                    </div>
-
+                    {/* import 3D Models component */}
+                        {/* <Model /> */}
+                    
                     {/* Vehicles */}
                     <h2 id="threeD">ᯓ Vehicles</h2>
-                    <div id="modelObjects">
-                    </div>
                 </div>}
 
                 {activeSection === "illustrations" && <div className="section illustrations">
