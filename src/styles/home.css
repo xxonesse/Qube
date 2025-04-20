@@ -187,7 +187,19 @@
         text-align: center;
         margin-left: 20px;
     }
+    #meet {
+        display: none;
+    }
 }
 /* Styles for even smaller mobile screens */
 @media (max-width: 480px) {
+    .desc {
+        text-align: center;
+    }
+    .description {
+        font-size: 30px;
+    }
+    #meet, #download {
+        display: none;
+    }
 }

@@ -35,6 +35,7 @@
     cursor: pointer;
     background-color: #ffffff1d;
     border-radius: 10px;
+    font-size: 15px;
 }
 .nav-btn.active {
     border: 1px solid #ffffffd8;
@@ -51,5 +52,37 @@
 
 #qlogo {
     height: 30px;
-    margin-left: auto;
+}
+
+@media (max-width: 850px) {
+    .tabs {
+        gap: 10px;
+    }
+    .nav-btn {
+        width: 80px ;
+        font-size: 12px;
+    }
+    #qlogo {
+        height: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tabs {
+        gap: 5px;
+    }
+    .nav-btn {
+        width: 60px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-btn {
+        width: 55px;
+        font-size: 10px;
+    }
+    #qlogo {
+        height: 18px;
+    }
 }
