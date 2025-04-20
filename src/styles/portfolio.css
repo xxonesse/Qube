@@ -1,9 +1,11 @@
 #folio {
     text-align: center;
     margin-top: 10px;
+    font-size: 20px;
 }
 #threeD {
     margin-left: 50px;
+    font-size: 20px;
 }
 #foliotabs {
     display: flex;
@@ -56,8 +58,9 @@
 }
 #mooji {
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
     margin-left: 40px;
+    font-size: 20px;
 }
 #illustrations {
     display: flex;
@@ -81,4 +84,23 @@
     border: 1px solid rgba(255, 106, 0, 0.352);
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 106, 0, 0.245);
+}
+
+@media (max-width: 480px) {
+    #foliotabs {
+        gap: 35px;
+    }
+    #folio {
+        font-size: 18px;
+    }
+    .modeltab, .illustab, .comsnstab {
+        font-size: 12px;
+        width: 70px;
+    }
+    #threeD {
+        font-size: 15px;
+    }
+    #mooji {
+        font-size: 15px;
+    }
 }
